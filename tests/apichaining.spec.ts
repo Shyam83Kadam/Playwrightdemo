@@ -11,7 +11,7 @@ test("API chaining",async({request})=>{
          const accessToken=token.accessToken;
          console.log(accessToken);
 
-         // Step 2: Create Order
+         // Step 2: Create Orders
 
     const orderresponse=await
          request.post(`${baseurl}/orders`,{headers:{Authorization: `Bearer ${accessToken}`},data:{bookId: "1",
