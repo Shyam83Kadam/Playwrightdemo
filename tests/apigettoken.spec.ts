@@ -8,5 +8,5 @@ test('Test get token',async ({request})=>{
     await expect(response).toBeOK();
     console.log(await response.json());
     console.log(response.headers());
-    // console.log(await response.body());
+    console.log(await response.body());
 });
